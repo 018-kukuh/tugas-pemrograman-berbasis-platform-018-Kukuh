@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Layout Responsif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+            <h1 class="text-xl font-bold">Profil Mahasiswa</h1>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="#beranda" class="hover:text-yellow-300">Beranda</a>
+                <a href="#profil" class="hover:text-yellow-300">Profil</a>
+                <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="beranda" class="bg-white">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-6 px-4 py-12 md:grid-cols-2 md:py-16">
+            <div>
+                <p class="mb-3 font-semibold text-blue-600">HALO, SELAMAT DATANG!</p>
+                <h2 class="mb-4 text-3xl font-bold leading-tight md:text-4xl">
+                    Kenali Profil dan Kegiatan Mahasiswa
+                </h2>
+                <p class="mb-6 leading-relaxed text-slate-600">
+                    Halaman ini menampilkan informasi biodata, jadwal kuliah,
+                    dan kegiatan mahasiswa.
+                </p>
+                <a href="#profil" class="inline-block rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-800">
+                    Lihat Informasi
+                </a>
+            </div>
+
+            <div class="rounded-2xl bg-blue-50 p-6 text-center md:p-10">
+                <div class="text-6xl">🎓</div>
+                <h3 class="mt-4 text-xl font-bold">Semangat Belajar!</h3>
+                <p class="mt-2 text-slate-600">
+                    Belajar, berkembang, dan meraih masa depan.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tiga Kartu Konten -->
+    <main id="profil" class="mx-auto max-w-6xl px-4 py-12">
+        <div class="mb-8 text-center">
+            <h2 class="text-2xl font-bold md:text-3xl">Informasi Mahasiswa</h2>
+            <p class="mt-2 text-slate-600">
+                Tiga informasi utama dalam satu halaman.
+            </p>
+        </div>
+
+        <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 text-4xl">👤</div>
+                <h3 class="mb-3 text-xl font-bold">Biodata</h3>
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Berisi informasi identitas, nama lengkap, dan nomor induk mahasiswa.
+                </p>
+                <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Lihat detail →
+                </a>
+            </article>
+
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 text-4xl">📚</div>
+                <h3 class="mb-3 text-xl font-bold">Jadwal Kuliah</h3>
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Berisi informasi mata kuliah, waktu belajar, dan kegiatan akademik.
+                </p>
+                <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Lihat detail →
+                </a>
+            </article>
+
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 text-4xl">🌟</div>
+                <h3 class="mb-3 text-xl font-bold">Kegiatan</h3>
+                <p class="mb-4 leading-relaxed text-slate-600">
+                    Berisi kegiatan organisasi, proyek, dan pengembangan kemampuan.
+                </p>
+                <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Lihat detail →
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-slate-800 px-4 py-6 text-center text-white">
+        <p class="font-semibold">Kukuh Dwi Nur Cahyo</p>
+        <p class="mt-2 text-sm text-slate-300">
+            Dibuat pada tahun &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>
